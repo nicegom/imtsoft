@@ -1443,7 +1443,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
    .company-about{
     padding: 200px 100px;
-    background-image: url(/images/bg_sv02.png);
+    background-image: url(../images/bg_sv02.png);
     background-size: cover;
     background-repeat: no-repeat;
     }
