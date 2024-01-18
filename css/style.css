@@ -1446,8 +1446,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     background-image: url(../images/bg_sv02.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 3.35em;
     }
-
+    
     .company-about2{
     padding: 100px 100px;
     }
@@ -1490,7 +1491,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
             border-right: solid 5px #3AB8B7;
             height: 45px;
             margin: 0 0 0 40px;}
-/*        .his_box1 .wbar {display: none }*/
         .his_box2 ul li{ font-size: 20px; text-align: left; padding-left: 10px;}
          
         @media (max-width: 991.98px){
@@ -1498,14 +1498,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
                  justify-content: flex-start;
                 border-right: none;
                 }
-            .wbar { }
             .his_box1 h2{margin : 20px 0 ;}
-            .his_box1 .hbar {display: none }
-            .his_box1 .wbar {
-            border-left: solid 5px #3AB8B7;
-            height: 45px; margin: 20px 20px 0 0;}
-            .col-lg-8.his_box2{padding-left: 0;}
+            .his_box1 .hbar { display: none;}
+            .his_box1 .wbar { border-left: solid 5px #3AB8B7; height: 45px; margin: 20px 20px 0 0; }
+            .col-lg-8.his_box2 {padding-left: 0;}
+        }
 
+            
+    .patent_cont{ }
+    .patent_cont .accordion-body img{width: 100%; margin: 5px 0; }
+    .patent_cont .accordion-item .accordion-body {color: #000;}
+    .patent_cont button.btn { font-size: 16px; }
 
 
 
