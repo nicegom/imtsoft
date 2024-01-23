@@ -386,3 +386,67 @@ $(function(){
 
 
 })
+
+
+    // Close all accordion items on page load
+    closeAllSections();
+
+    // Burgur (Hamburger) button click event
+    $("#slide-open").click(function() {
+        if ($("#burgur").hasClass('on')) {
+            // Close the menu
+            closeMenu();
+        } else {
+            // Open the menu
+            openMenu();
+        }
+    });
+
+    // Dim (overlay) click event
+    $("#dim").click(function() {
+        closeMenu();
+    });
+
+    // Click event for elements with the class 'has-children' (accordion items)
+    $('.has-children').click(function() {
+        // Close all other open accordions
+        $('.has-children').not(this).removeClass('active');
+        $('.nav_2dep').not($(this).find('.nav_2dep')).slideUp();
+
+        // Toggle active class and slide toggle
+        $(this).toggleClass('active');
+        $(this).find('.nav_2dep').slideToggle();
+
+        // Toggle open class for accordion effect
+        $(this).toggleClass('open');
+    });
+
+    // Function to close the menu
+    function closeMenu() {
+        $("#burgur").removeClass('on');
+        $("#slide").removeClass('on');
+        $("#nav_mo").removeClass('top_h');
+        $("#dim").hide();
+        closeAllSections();
+    }
+
+    // Function to open the menu
+    function openMenu() {
+        $("#burgur").addClass('on');
+        $("#slide").addClass('on');
+        $("#nav_mo").addClass('top_h');
+        $("#dim").show();
+    }
+
+    // Function to close all open sections
+    function closeAllSections() {
+        $('.has-children').removeClass('open');
+        $('.nav_2dep').slideUp();
+    }
+
+
+
+
+
+
+        
