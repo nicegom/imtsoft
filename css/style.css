@@ -1554,7 +1554,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         .slide-open {
             position: absolute;
             top: 0;
-            right: 0;
+            right: 20px;
             width: 50px;
             height: 50px;
             cursor: pointer;
