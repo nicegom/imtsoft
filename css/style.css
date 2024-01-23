@@ -1452,6 +1452,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     margin-top: 3.35em;
     }
     
+    @media (max-width: 991.98px) {
+     .company-about{
+    padding: 150px 50px;
+    }
     .company-about2{
     padding: 100px 100px;
     }
@@ -1674,11 +1678,3 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         
         #dim{position: fixed; top:80px ; left:0 ; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.6); display: none;z-index: -1;}
     }
-
-
-
-
-
-
-
-
