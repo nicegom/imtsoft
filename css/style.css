@@ -205,8 +205,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     cursor: pointer; }
 
 .site-nav {
-  padding-top: 20px;
-  padding-bottom: 20px;}
+    padding-top: 20px;}
+/*  padding-bottom: 20px;}*/
   .site-nav h1 {
     margin: 0;
     padding: 0;
@@ -1536,8 +1536,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
         .nav_body {
             height: 100vh;
-            position: relative;
+            position: absolute;
             overflow: hidden;
+            width: 300px;
+            right: 0;
+            top: 60px;
         }
         
         .nav_content {
