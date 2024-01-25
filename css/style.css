@@ -646,7 +646,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     padding: 5rem 0; }
   @media (max-width: 991.98px) {
     .untree_co-hero {
-      text-align: center; } }
+      text-align: center; } 
+    .untree_co-hero, .untree_co-hero > .container > .row {
+      overflow-x: hidden;}
+}
   .untree_co-hero .heading {
     line-height: 1;
     font-family: 'SUIT Variable';
@@ -1498,7 +1501,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     
     }
     @media (max-width: 991.98px){
-    ..con_history{
+    .con_history{
     padding: 20px;}
     }
 
