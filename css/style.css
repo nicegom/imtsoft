@@ -1454,11 +1454,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     
     @media (max-width: 991.98px) {
      .company-about{
-    padding: 150px 50px;
+         padding: 80px 50px;}
     }
+    
     .company-about2{
     padding: 100px 100px;
     }
+    
+     @media (max-width: 991.98px) {
+     .company-about2{
+     padding: 70px 50px;}
+    }
+        
+        
     .com_txt1{
     color: #fff;
     font-size: 24px;
@@ -1489,7 +1497,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     .con_history{
     
     }
-     .col-lg-4.his_box1{padding-top: 0; padding-right: 0;}
+    @media (max-width: 991.98px){
+    ..con_history{
+    padding: 20px;}
+    }
+
+    .col-lg-4.his_box1{padding-top: 0; padding-right: 0;}
       .his_box1{
         border-right: solid 1px #e0e0e0;
         display: flex;  justify-content: flex-end;}
@@ -1499,7 +1512,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
             height: 45px;
             margin: 0 0 0 40px;}
         .his_box2 ul li{ font-size: 20px; text-align: left; padding-left: 10px;}
-         
+       
+    @media (max-width: 991.98px){
+            .his_box2 ul li{ font-size:18px}
+            }
+
         @media (max-width: 991.98px){
             .his_box1{
                  justify-content: flex-start;
@@ -1509,6 +1526,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
             .his_box1 .hbar { display: none;}
             .his_box1 .wbar { border-left: solid 5px #3AB8B7; height: 45px; margin: 20px 20px 0 0; }
             .col-lg-8.his_box2 {padding-left: 0;}
+            
+            
         }
 
             
@@ -1558,7 +1577,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         .slide-open {
             position: absolute;
             top: 0;
-            right: 15px;
+            right: 0;
             width: 50px;
             height: 50px;
             cursor: pointer;
