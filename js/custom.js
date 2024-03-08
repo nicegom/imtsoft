@@ -421,6 +421,19 @@ $(function(){
         $(this).toggleClass('open');
     });
 
+    // Dim (overlay) click event
+    $(".drop_2dep").click(function() {
+			var clickedClass = $(this).attr('class');
+			var spanElement = $(this);
+
+			if (clickedClass.includes("open")) {
+				spanElement.removeClass("open")
+			} else {
+				$(".drop_2dep").not(this).removeClass("open")
+				spanElement.addClass("open")
+			}
+		});
+
     // Function to close the menu
     function closeMenu() {
         $("#burgur").removeClass('on');
